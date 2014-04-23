@@ -1,0 +1,406 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400);
+
+@import url(http://fonts.googleapis.com/css?family=Buenard);
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.flex-video {
+  position: relative;
+  padding-top: 1.5625em;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  color: #fd0100;
+}
+a:hover,
+a:focus {
+  color: #a10100;
+  text-decoration: none;
+}
+blockquote {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+html {
+  min-height: 100%;
+}
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 20px;
+}
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn.btn-primary {
+  text-transform: uppercase;
+  background: #a10100;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  font-weight: normal;
+  padding: 11px 19px;
+}
+.btn.btn-primary:hover {
+  background: #d40100;
+}
+.clear {
+  clear: both;
+}
+.twitter-timeline.twitter-timeline-rendered {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.dropcap {
+  font-size: 67px;
+  line-height: 0.8em;
+  float: left;
+  margin-right: 0.2em;
+}
+header {
+  background-image: url('../img/bg/5.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: all ease 1.8s;
+  -moz-transition: all ease 1.8s;
+  -o-transition: all ease 1.8s;
+  transition: all ease 1.8s;
+}
+header.bg1 {
+  background-image: url('../img/bg/6.jpg');
+}
+header.container {
+  width: 100%;
+}
+footer {
+  font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+  padding: 30px 15px;
+  position: relative;
+}
+footer .by {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.8em;
+}
+footer blockquote {
+  margin-bottom: 0;
+}
+.manchester-united {
+  background: url('../img/manchester-united.png') no-repeat;
+  width: 150px;
+  height: 152px;
+}
+section {
+  padding: 30px 0;
+}
+section#about {
+  font-family: 'Buenard', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6em;
+}
+section#about h1 {
+  font-family: 'Lato';
+  margin-bottom: 1em;
+}
+section#stat {
+  background: #a10100;
+  color: #fff;
+}
+section#stat .container {
+  position: relative;
+}
+section#stat .stat-wrapper {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+}
+section#stat .stat-wrapper h3 {
+  font-family: 'Lato';
+  font-size: 2.4em;
+}
+section#stat .stat-wrapper small {
+  text-transform: uppercase;
+}
+section#stat .premier-league {
+  background: url('../img/premier-cup.png') repeat-x;
+  height: 80px;
+  width: 539px;
+}
+section#stat .premier-league,
+section#stat .fa-cup,
+section#stat .carling-cup,
+section#stat .champions-league {
+  display: inline-block;
+}
+section#stat .fa-cup,
+section#stat .carling-cup,
+section#stat .champions-league {
+  margin-bottom: 5px;
+}
+section#stat .fa-cup {
+  background: url('../img/fa-cup.png') repeat-x;
+  height: 80px;
+  width: 147px;
+}
+section#stat .carling-cup {
+  background: url('../img/carling-cup.png') repeat-x;
+  height: 80px;
+  width: 122px;
+}
+section#stat .champions-league {
+  background: url('../img/champions-cup.png') repeat-x;
+  height: 80px;
+  width: 98px;
+}
+section#saythanks {
+  background-color: #000;
+  background-image: url('../img/bg/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center 85%;
+  height: 300px;
+  color: #fff;
+  padding-top: 100px;
+  font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+  position: relative;
+}
+section#saythanks .container {
+  width: 450px;
+}
+section#saythanks .by {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.8em;
+}
+section#saythanks blockquote {
+  text-align: left;
+}
+.quote-holder {
+  margin-bottom: 30px;
+}
+.quote-holder blockquote {
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ededed));
+  background-image: -webkit-linear-gradient(top, #ffffff, #ededed);
+  background-image: -o-linear-gradient(top, #ffffff, #ededed);
+  background-image: linear-gradient(to bottom, #ffffff, #ededed);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffededed', GradientType=0);
+  padding: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Buenard', Georgia, serif;
+}
+.quote-holder blockquote p {
+  margin-bottom: 0.5em;
+  line-height: 1.6em;
+}
+.quote-holder blockquote small {
+  font-family: 'Open Sans', arial;
+}
+.quotes {
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.quotes.unstyled {
+  margin-left: auto;
+}
+.quotes li {
+  float: left;
+  width: 25%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.quotes li a {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+.quotes li a img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;
+  max-width: 70px;
+}
+.quotes li a:hover img,
+.quotes li a.active img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.fb_iframe_widget {
+  vertical-align: top;
+}
+.popover {
+  color: #333;
+}
+.popover .popover-content {
+  text-align: center;
+  font-weight: bold;
+}
+.popover .popover-content small {
+  font-weight: normal;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+@media (max-width: 979px) {
+  header {
+    background-position: center top;
+    height: 350px;
+  }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  header {
+    background-position: center top;
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dropcap {
+    font-size: 56px;
+  }
+  section#about {
+    font-size: 1.125em;
+  }
+  section#saythanks {
+    padding-left: 20px;
+    padding-right: 30%;
+    padding-top: 30px;
+  }
+  section#saythanks p {
+    font-size: 1em;
+  }
+  section#saythanks .by {
+    left: 10px;
+  }
+  section#stat .trophies {
+    margin-bottom: 10px;
+  }
+  .box {
+    padding: 0 20px;
+  }
+  .quote-holder blockquote p {
+    font-size: 1.125em;
+  }
+  .quotes.unstyled li {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .quotes.unstyled li a img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    max-width: none;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    background-position: center top;
+    width: 100%;
+    height: 250px;
+  }
+  #about h1 {
+    font-size: 2em;
+  }
+  section#saythanks .container {
+    width: auto;
+  }
+  footer .by {
+    right: 0;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  #about h1 {
+    font-size: 2.1em;
+  }
+  section#saythanks {
+    background-position-x: 65%;
+  }
+  .btn.btn-primary {
+    font-size: 0.8em;
+    padding: 4px 12px;
+  }
+}

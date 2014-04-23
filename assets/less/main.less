@@ -1,0 +1,446 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400);
+@import url(http://fonts.googleapis.com/css?family=Buenard);
+
+@import "mixins";
+
+// VARIABLES
+@red: #FD0100;
+@darkRed: darken(@red, 18%);
+
+// GLOBALS
+* {
+  .box-sizing(border-box);
+}
+
+a {
+  color: @red;
+  
+  &:hover,
+  &:focus {
+    color: @darkRed;
+    text-decoration: none;
+  }
+}
+
+
+blockquote {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+// BUTTONS
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  
+  &.btn-primary {
+    text-transform: uppercase;
+    background: @darkRed;
+    .transition(0.3s all ease);
+    font-weight: normal;
+    padding: 11px 19px;
+    
+    &:hover {
+      background: lighten(@darkRed, 10%);
+    }
+  }
+}
+
+// ONE-OFF CLASSES / HELPERS
+.clear { clear: both; }
+.twitter-timeline.twitter-timeline-rendered { width: 100%; }
+.text-center { text-align: center; }
+
+// MAIN
+.dropcap {
+  font-size: 67px;
+  line-height: 0.8em;
+  float: left;
+  margin-right: 0.2em;
+}
+
+header {
+  background-image: url('../img/bg/5.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  .background-size(cover);
+  position: relative;
+  .transition(all ease 1.8s);
+  
+  &.bg1 {
+    background-image: url('../img/bg/6.jpg');
+  }
+  
+  &.container {
+    width: 100%;
+  }
+}
+
+footer {
+  font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+  padding: 30px 15px;
+  position: relative;
+  
+  .by {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.8em;
+  }
+  
+  blockquote {
+    margin-bottom: 0;
+  }
+}
+
+.manchester-united {
+  background: url('../img/manchester-united.png') no-repeat;
+  width: 150px;
+  height: 152px;
+}
+
+section {
+  padding: 30px 0;
+  
+  &#about {
+    font-family: 'Buenard', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6em;
+    
+    h1 {
+      font-family: 'Lato';
+      margin-bottom: 1em;
+    }
+  }
+
+  &#stat {
+    background: @darkRed;
+    color: #fff;
+    
+    .container {
+      position: relative;
+    }
+
+    .stat-wrapper {
+      display: inline-block;
+      text-align: center;
+      padding: 0 20px;
+
+      h3 {
+        font-family: 'Lato';
+        font-size: 2.4em;
+      }
+
+      small {
+        text-transform: uppercase;
+      }
+    }
+
+    .premier-league {
+      background: url('../img/premier-cup.png') repeat-x;
+      height: 80px;
+      width: 539px;
+    }
+
+    .premier-league, .fa-cup, .carling-cup, .champions-league {
+      display: inline-block;
+    }
+    
+    .fa-cup, .carling-cup, .champions-league {
+      margin-bottom: 5px;
+    }
+
+    .fa-cup {
+      background: url('../img/fa-cup.png') repeat-x;
+      height: 80px;
+      width: 147px;
+    }
+
+    .carling-cup {
+      background: url('../img/carling-cup.png') repeat-x;
+      height: 80px;
+      width: 122px;
+    }
+
+    .champions-league {
+      background: url('../img/champions-cup.png') repeat-x;
+      height: 80px;
+      width: 98px;
+    }
+  }
+
+  &#saythanks {
+    background-color: #000;
+    background-image: url('../img/bg/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    height: 300px;
+    color: #fff;
+    padding-top: 100px;
+    font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+    position: relative;
+
+    .container {
+      width: 450px;
+    }
+    
+    .by {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: 0.8em;
+    }
+
+    blockquote {
+      text-align: left;
+    }
+  }
+}
+
+.quote-holder {
+  margin-bottom: 30px;
+
+  blockquote {
+    #gradient > .vertical(#fff, #ededed);
+    // background: #fafafa;
+    padding: 20px;
+    .border-radius(8px);
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+    .transition(0.3s all ease);
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Buenard', Georgia, serif;
+    
+    p {
+      // font-size: 1em;
+      margin-bottom: 0.5em;
+      line-height: 1.6em;
+    }
+
+    small {
+      font-family: 'Open Sans', arial;
+    }
+  }
+}
+
+.quotes {
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  
+  &.unstyled {
+    margin-left: auto;
+  }
+  
+  li {
+    float: left;
+    width: 25%;
+    margin-bottom: 1em;
+    text-align: center;
+    
+    a {
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+      
+      img {
+        .opacity(60);
+        .transition(0.3s all ease);
+        .border-radius(70px);
+        max-width: 70px;
+      }
+
+      &:hover, &.active {
+        img {
+        .opacity(100);
+          
+        }
+      }
+    }
+  }
+}
+
+.fb_iframe_widget {
+  vertical-align: top;
+}
+
+// BS PLUGINS
+
+.popover {
+  color: #333;
+  
+  .popover-content {
+    text-align: center;
+    font-weight: bold;
+    
+    small {
+      font-weight: normal;
+    }
+  }
+}
+
+// MEDIA QUERIES
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+
+@media (max-width: 979px) {
+  header {
+    background-position: center top;
+    height: 350px;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  header {
+    background-position: center top;
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .dropcap {
+    font-size: 56px;
+  }
+  
+  section {    
+    &#about {
+      font-size: 1.125em;
+    }
+
+    &#saythanks {
+      padding-left: 20px;
+      padding-right: 30%;
+      padding-top: 30px;
+      
+      p {
+        font-size: 1em;
+      }
+
+      .by {
+        left: 10px;
+      }
+    }
+
+    &#stat {
+      .trophies {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .box {
+    padding: 0 20px;
+  }
+
+  .quote-holder {
+    blockquote {
+      p {
+        font-size: 1.125em;
+      }
+    }
+  }
+
+  .quotes.unstyled {
+    li {
+      margin-right: 0;
+      margin-bottom: 0;
+
+      a img {
+        .border-radius(0);
+        max-width: none;
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    background-position: center top;
+    width: 100%;
+    height: 250px;
+    // .background-size(contain);
+    
+    // .logo {
+    //   position: absolute;
+    //   top: 88px;
+    //   right: 10px;
+    // }
+  }
+
+  #about {
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  section#saythanks {
+    .container {
+      width: auto;
+    }
+  }
+
+  footer {
+    .by {
+      right: 0;
+      bottom: 5px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width: 320px) {
+  header {
+    // .logo {
+    //   width: 170px;
+    //   top: 50px;
+    //   right: 5px;
+    // }
+  }
+
+  #about {
+    h1 {
+      font-size: 2.1em;
+    }
+  }
+
+  section#saythanks {
+    background-position-x: 65%;
+  }
+
+  .btn.btn-primary {
+    font-size: 0.8em;
+    padding: 4px 12px;
+  }
+}
